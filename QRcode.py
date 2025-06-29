@@ -7,7 +7,7 @@ st.write("by Caivil Ndobela")
 
 try:
     
-    def generate_qr_code(text, file_name, qrcolor="white", bgcolor="black"):
+    def generate_qr_code(text, file_name):
         #QR Code Configuration
         qrcolor = st.text_input(str("Choose color of qrcode:"))
         bgcolor = st.text_input(str("Choose color of background:"))
@@ -32,7 +32,7 @@ try:
         text= x
         file_name= y + ".png"
         
-        generate_qr_code(text, file_name, qrcolor="white", bgcolor="black")
+        generate_qr_code(text, file_name)
         
     
     st.image(file_name)
@@ -50,6 +50,4 @@ except ValueError:
 
 st.button("Enter")
     
-
-
 
