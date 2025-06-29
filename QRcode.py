@@ -2,7 +2,7 @@ import qrcode
 import streamlit as st
 
 st.image("logo.png",width=250)
-st.title("QRcode genereator")
+st.title("QRcode generator")
 st.write("by Caivil Ndobela")
 
 try:
@@ -50,4 +50,5 @@ except ValueError:
 
 
     
+
 
