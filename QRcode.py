@@ -48,7 +48,7 @@ try:
 except ValueError:
     st.error("Please fill in the columns")
 
-
+st.button("Enter")
     
 
 
