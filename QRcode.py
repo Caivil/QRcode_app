@@ -9,8 +9,8 @@ try:
     
     def generate_qr_code(text, file_name):
         #QR Code Configuration
-        qrcolor = st.text_input(str("Choose color of qrcode:"))
-        bgcolor = st.text_input(str("Choose color of background:"))
+        qrcolor = st.text_input(str("Choose color of qrcode:")).strip()
+        bgcolor = st.text_input(str("Choose color of background:")).strip()
         
         qr = qrcode.QRCode(
             version=1,
@@ -25,8 +25,8 @@ try:
         back_color=bgcolor)# Creating the Image
         img.save(file_name)
     
-    x=st.text_input(str("Input URL:"))
-    y=st.text_input(str("Output file_name:"))
+    x=st.text_input(str("Input URL:")).strip()
+    y=st.text_input(str("Output file_name:")).strip()
     
     if __name__ == "__main__":
         text= x
@@ -50,4 +50,5 @@ except ValueError:
 
 st.button("Enter")
     
+
 
