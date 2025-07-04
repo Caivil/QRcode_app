@@ -3,5 +3,3 @@ This web-app, built using the Streamlit Python library, allows users to upload t
 
 Here is the link to the web-app: https://qrcodeapp-caivil.streamlit.app/
 
-![Uploading image.png…]()
-
